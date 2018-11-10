@@ -20,6 +20,7 @@ static BOOL isInterceptedSelector(SEL sel) {
             sel == @selector(scrollViewDidScroll:) ||
             sel == @selector(scrollViewWillBeginDragging:) ||
             sel == @selector(scrollViewDidEndDragging:willDecelerate:) ||
+            sel == @selector(scrollViewWillEndDragging:withVelocity:targetContentOffset:) ||
             sel == @selector(scrollViewDidEndDecelerating:) ||
             // UICollectionViewDelegate
             sel == @selector(collectionView:willDisplayCell:forItemAtIndexPath:) ||
@@ -40,6 +41,7 @@ static BOOL isInterceptedSelector(SEL sel) {
             sel == @selector(scrollViewDidScroll:) ||
             sel == @selector(scrollViewWillBeginDragging:) ||
             sel == @selector(scrollViewDidEndDragging:willDecelerate:) ||
+            sel == @selector(scrollViewWillEndDragging:withVelocity:targetContentOffset:) ||
             sel == @selector(scrollViewDidEndDecelerating:) ||
             // IGListCollectionViewDelegateLayout
             sel == @selector(collectionView:layout:customizedInitialLayoutAttributes:atIndexPath:) ||
